@@ -8,25 +8,28 @@
         body{
             font-size: larger;
         }
+        header{
+            text-align: center;
+            text-shadow: 2px 2px 2px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Customer Feedback</h1>
+    </header>
     <fieldset id="fldset">
-        <label>Customer Feedback</label>
+        <label>1. Does customer service meet expectation?</label>
         <p>
-        <label for="p">Poor</label>
-        <input type="radio" id="p" value="P" name="status"/>
-        <label for="g">Good</label>
-        <input type="radio" id="g" value="g" name="status"/>
-        <label for="v">Very Good</label>
-        <input type="radio" id="v" value="v" name="status"/>
-        <label for="e">excellent</label>
-        <input type="radio" id="e" value="e" name="status"/>
-        </p>  
+        <label for="y">Yes</label>
+        <input type="radio" id="y" value="y" name="status"/>
+        <label for="n">No</label>
+        <input type="radio" id="n" value="n" name="status"/>
+        </p>
     </fieldset>
 
     <fieldset id="fldset">
-        <label>Quality of products</label>
+        <label>2. Quality of product</label>
         <p><label>Is it user friendly?</label></p>
         <p>
         <label for="y">Yes</label>
@@ -34,10 +37,15 @@
         <label for="n">No</label>
         <input type="radio" id="n" value="n" name="status"/>
         </p>
+        <p>Is it durable?</p>
+        <label for="y">Yes</label>
+        <input type="radio" id="y" value="y" name="status"/>
+        <label for="n">No</label>
+        <input type="radio" id="n" value="n" name="status"/>
      </fieldset>
 
     <fieldset id="fldset">
-        <label>Product Affordability</label>
+        <label>3. Product Affordability</label>
         <p>
         <label for="y">Yes</label>
         <input type="radio" id="y" value="y" name="status"/>
@@ -45,6 +53,33 @@
         <input type="radio" id="n" value="n" name="status"/>
         </p>
     </fieldset>
+
+    <fieldset id="fldset">
+        <label>4. Is data security protected for servicing old laptops?</label>
+        <p>
+        <label for="y">Yes</label>
+        <input type="radio" id="y" value="y" name="status"/>
+        <label for="n">No</label>
+        <input type="radio" id="n" value="n" name="status"/>
+        </p>
+    </fieldset>
+
+    <fieldset id="fldset">
+        <label>5. Overall service</label>
+        <p>
+        <label for="p">Poor</label>
+        <input type="radio" id="p" value="p" name="status"/>
+        <label for="g">Good</label>
+        <input type="radio" id="g" value="g" name="status"/>
+        <label for="v">Very good</label>
+        <input type="radio" id="v" value="v" name="status"/>
+        <label for="e">Excellent</label>
+        <input type="radio" id="e" value="e" name="status"/>
+        </p>
+        </p>
+    </fieldset>
+
+
 
     
 </body>
