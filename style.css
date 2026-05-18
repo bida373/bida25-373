@@ -1,1 +1,9 @@
-
+/* only applies on About page */
+header h1, h2{
+                    text-align: center;
+               }
+               section{
+                    font-size: large;
+                    
+               }
+               
