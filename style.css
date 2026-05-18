@@ -1,10 +1,26 @@
 /* only applies on index */
+               body{
+                    font-family: arial, sans-serif;
+                    margin: 0;
+                    padding: 20px;
+               }
+               /* background only for index page */
+               body.index-page{
+                    background: #f0f8ff;
+
+               /* make sure other pages have no background */
+               body.other-page{
+                    background: none;
+                    background-color: white;
+               }
+                 
 *{
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
                }
-               body{
+               
+                 
                     /*load background image*/
                     background-image: url('images/media3-bg.jpg');
                     background-size: cover;
