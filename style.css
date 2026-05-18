@@ -27,5 +27,21 @@ body{
             text-align: center;
             text-shadow: 2px 2px 2px;
         }
+
+/* only applies on products */
+table{
+            border: 1px solid blue;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        tr, th, td{
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        th{
+            background-color: lightsteelblue;
+        }
+        
               
 
