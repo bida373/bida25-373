@@ -6,6 +6,7 @@ header h1, h2{
                     font-size: large;
                     
                }
+
 /* only applies on contact */
 header{
                     text-shadow: 2px 2px 2px;
@@ -17,5 +18,14 @@ header{
                 padding: 20px;
                 font-size: larger;
                }
+
+/* only applies on feedback */
+body{
+            font-size: larger;
+        }
+        header{
+            text-align: center;
+            text-shadow: 2px 2px 2px;
+        }
               
 
