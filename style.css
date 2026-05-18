@@ -1,3 +1,102 @@
+/* only applies on index */
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+               }
+               body{
+                    /*load background image*/
+                    background-image: url('images/media3-bg.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    margin: 0;
+                    
+               }
+               /* All content sits above the overlay */
+               div#wrapper{
+                    position: relative;
+                    z-index: 2;
+                    color: white;
+                    padding: 20px;
+               }
+               header{
+                 background-color: lightskyblue;
+                 text-align: center;
+                 padding: 40px 20px 20px;
+                 font-style:oblique; 
+               }
+               #sitetitle{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+               }
+               #sitemotto{
+                    font-size: 1.3rem;
+                    text-shadow: 1px 1px 6px rgba(0,0,0,0.7)
+               }
+               nav{
+                    text-align: center;
+                    font-size: large;
+                    margin: 20px 0;
+                    padding: 20px;
+               }
+               nav a{
+                    margin: 0 15px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+               }
+               nav a:hover{
+                    text-decoration: underline;
+               }
+               section#content{
+                    max-width: 800px;
+                    margin 40px auto;
+                    font-size: 1.2rem;
+                    padding: 20px;
+                    line-height: 1.8;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+               }
+               section#content h2{
+                    font-size: 2.2rem;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+               }
+               footer{
+                    text-align: center;
+                    padding: 40px 20px;
+                    margin-top: 60px;
+               }
+               footer p{
+                    margin: 10px 0;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+               }
+               #socialmedia a{
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 12px;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8)
+               }
+               /* Mobile responsive */
+               @media (max-width: 768px){
+                    #sitetitle{
+                         font-size: 2rem;
+               }
+                    nav a{
+                         display: inline-block:
+                         margin: 8px;
+                         color: white;
+                    }
+                    section#content{
+                         padding: 15px;
+                         font-size: 1rem;
+                    }
+               }
 /* only applies on About */
 header h1, h2{
                     text-align: center;
