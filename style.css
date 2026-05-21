@@ -17,3 +17,13 @@ header{
                 text-align: center;
                 padding: 20px;
                 font-size: larger;
+               }
+
+/* only applies on feedback */
+body{
+            font-size: larger;
+        }
+        header{
+            text-align: center;
+            text-shadow: 2px 2px 2px;
+        }
