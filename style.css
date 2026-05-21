@@ -1,29 +1,30 @@
-/* only applies on About */
-header h1, h2{
-                    text-align: center;
-               }
-               section{
-                    font-size: large;
+/* About page only */
+.page-About header h1, 
+.page-About header h2{
+   text-align: center;
+}
+.page-About section{
+   font-size: large;
                     
-               }
+}
 
-/* only applies on contact */
-header{
-                    text-shadow: 2px 2px 2px;
-                    text-align: center;
-               }  
-               section{
+/* contact page only */
+.page-contact header{
+   text-shadow: 2px 2px 2px;
+   text-align: center;
+}  
+page-contact section{
                 background-color: paleturquoise;
                 text-align: center;
                 padding: 20px;
                 font-size: larger;
-               }
+ }
 
-/* only applies on feedback */
-body{
+/* feedback page only */
+.page-feedbackbody{
             font-size: larger;
-        }
-        header{
+}
+.page-feedback header{
             text-align: center;
             text-shadow: 2px 2px 2px;
-        }
+}
