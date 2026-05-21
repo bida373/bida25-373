@@ -1,17 +1,17 @@
 /* About page only */
 .page-About header h1, 
 .page-About header h2{
-   text-align: center;
+               text-align: center;
 }
 .page-About section{
-   font-size: large;
+               font-size: large;
                     
 }
 
 /* contact page only */
 .page-contact header{
-   text-shadow: 2px 2px 2px;
-   text-align: center;
+                 text-shadow: 2px 2px 2px;
+                 text-align: center;
 }  
 page-contact section{
                 background-color: paleturquoise;
