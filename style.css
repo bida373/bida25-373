@@ -6,3 +6,14 @@ header h1, h2{
                     font-size: large;
                     
                }
+
+/* only applies on contact */
+header{
+                    text-shadow: 2px 2px 2px;
+                    text-align: center;
+               }  
+               section{
+                background-color: paleturquoise;
+                text-align: center;
+                padding: 20px;
+                font-size: larger;
