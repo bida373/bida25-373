@@ -124,7 +124,7 @@
                          font-size: 2rem;
                }
                     nav a{
-                         display: inline-block:
+                         display: inline-block;
                          margin: 8px;
                     
                     }
@@ -140,7 +140,9 @@
           <div id="bg-slideshow">
                <div class="slide active" style="background-image: url('images/media3-bg.jpg');"></div>
                <div class="slide" style="background-image: url('images/media8-bg.jpg');"></div>
-               <div class="slide" style="background-image: url(''"     
+               <div class="slide" style="background-image: url('images/media11-bg.jpg');" ></div>
+          </div>
+          
           <div id="wrapper">
                
                 <header>
@@ -177,9 +179,23 @@
                   <div id="socialmedia">
                       <a href="https://www.instagram.com/OnziesTechSupplies">Instagram</a>|
                       <a href="https://www.facebook.com/OnziesTechSupplies">Facebook</a>|
-                      <a href="emailto:onziestechsupplies@gmail.com">Email</a>
+                      <a href="mailto:onziestechsupplies@gmail.com">Email</a>
                   </div>
                 </footer>
           </div>
+
+          <script>
+             // Background slideshow logic 
+               const slides = document.querySelectionAll('#bg-slideshow.slide');
+               let currentSlide = 0;
+
+               function changeSlide(){
+                    slides[currentSlide].classlist.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+               }
+               // change image every 5 seconds
+               setInterval(changesSlide, 5000);
+          </script>
      </body>
 </html>
