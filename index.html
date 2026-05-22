@@ -11,16 +11,46 @@
                     box-sizing: border-box;
                }
                body{
-                    /*load background image*/
-                    background-image: url('images/media3-bg.jpg');
+                    margin: 0;
+                    position: relative;
+                    min-height: 100vh;
+                    overflow-x: hidden;
+               }
+               /* Background slideshow container */
+               #bg-slideshow{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+               }
+               #bg-slideshow.slide{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
                     background-size: cover;
                     background-position: center;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    margin: 0;
-                    
+                    backgroung repeat: no-repeat;
+                    opacity: 0;
+                    transition: opacity 1.5s ease-in-out;
                }
-               /* All content sits above the overlay */
+               #bg-slideshow.slide.active{
+                    opacity: 1;
+               }
+               #bg-slideshow::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.4);
+                    
+               
+                    
+                    
+               
                div#wrapper{
                     position: relative;
                     z-index: 2;
@@ -106,6 +136,9 @@
            </style>
      </head>
      <body>
+          <!-- Background Slideshow -->
+          <div id="bg-slideshow">
+               <div class="slide active" style="background-image:url"
           <div id="wrapper">
                
                 <header>
