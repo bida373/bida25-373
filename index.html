@@ -180,15 +180,18 @@
 
   <script>
     const slides = document.querySelectorAll('#bg-slideshow.slide');
+    console.log("Found slides:", slides.length);
+
     let currentSlide = 0;
 
     function changeSlide(){
       slides[currentSlide].classList.remove('active');
       currentSlide = (currentSlide + 1) % slides.length;
       slides[currentSlide].classList.add('active');
+      console.log("Now showing slide:", currentSlide);
     }
 
-    setInterval(changeSlide, 5000);
+    setInterval(changeSlide, 2000);
   </script>
 </body>
 </html>                                    
