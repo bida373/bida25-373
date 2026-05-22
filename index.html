@@ -1,197 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onzie's Tech Supplies</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body{
-      margin: 0;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Onzie's Tech Supplies</title>
+          <style>
+               *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+               }
+               body{
+                    /*load background image*/
+                    background-image: url('images/bg.jpg(3)');
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    margin: 0;
+                    
+               }
+               /* All content sits above the overlay */
+               div#wrapper{
+                    position: relative;
+                    z-index: 2;
+                    color: white;
+                    padding: 20px;
+               }
+               header{
+                 background-color: lightskyblue;
+                 text-align: center;
+                 padding: 40px 20px 20px;
+                 font-style:oblique; 
+               }
+               #sitetitle{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+               }
+               #sitemotto{
+                    font-size: 1.3rem;
+                    text-shadow: 1px 1px 6px rgba(0,0,0,0.7)
+               }
+               nav{
+                    text-align: center;
+                    font-size: large;
+               
+                    
+                    
+               }
+               nav a{
+                    margin: 0 12px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+               
+               }
+               nav a:hover{
+                    color: lightskyblue;
+                    text-decoration: underline;
+               
+               }
+               section#content{
+                    max-width: 800px;
+                    margin 40px auto;
+                    font-size: 1.2rem;
+                    padding: 20px;
+                    line-height: 1.8;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+               }
+               section#content h2{
+                    font-size: 2.2rem;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+               }
+               footer{
+                    text-align: center;
+                    padding: 40px 20px;
+                    margin-top: 60px;
+               }
+               footer p{
+                    margin: 10px 0;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+               }
+               #socialmedia a{
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 12px;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.8)
+               }
+               /* Mobile responsive */
+               @media (max-width: 768px){
+                    #sitetitle{
+                         font-size: 2rem;
+               }
+                    nav a{
+                         display: inline-block:
+                         margin: 8px;
+                    }
+                    section#content{
+                         padding: 15px;
+                         font-size: 1rem;
+                    }
+               }
+           </style>
+     </head>
+     <body>
+          <div id="wrapper">
+               
+                <header>
+                     <h1 id="sitetitle">Onzie's Tech Supplies</h1>
+                     <span id="sitemotto">Discover your perfect computer</span>
+                </header>
+               
+                <nav id="sitenav">
+                     <ul id="ulnav">
+                         <a href="index.html">Home</a>
+                         <a href="About.html">About Us</a>
+                         <a href="contact.html">Contact Us</a>
+                         <a href="service.html">Service</a>
+                         <a href="support.html">Support</a>
+                         <a href="products.html">Products</a>
+                         <a href="feedback.html">Feedback</a>
+              
+                     </ul>
+                </nav>
+            
+                <section id="content">
+                      <h2>Welcome To Onzie's Tech Supplies!</h2>
+                      <p>Explore the best tech supplies and everything you need
+                        to know about our computers.Whether you are a first year student, first time
+                        doing tech, worry less the onzie's tech supplies got you.Discover our computers
+                        get familiar with tech and have fun using it.
+                      </p>
 
-    /* Background slideshow container */
-    #bg-slideshow{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
 
-    /* FIXED: added space between #bg-slideshow and.slide */
-    #bg-slideshow.slide{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    /* FIXED: added space here too */
-    #bg-slideshow.slide.active{
-      opacity: 1;
-    }
-
-    #bg-slideshow::after{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    div#wrapper{
-      position: relative;
-      z-index: 2;
-      color: white;
-      padding: 20px;
-    }
-    header{
-      background-color: rgba(135, 206, 250, 0.85);
-      text-align: center;
-      padding: 40px 20px 20px;
-      font-style:oblique;
-    }
-    #sitetitle{
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    }
-    #sitemotto{
-      font-size: 1.3rem;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.7)
-    }
-    nav{
-      text-align: center;
-      font-size: large;
-    }
-    nav a{
-      margin: 0 12px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    nav a:hover{
-      color: lightskyblue;
-      text-decoration: underline;
-    }
-    section#content{
-      max-width: 800px;
-      margin: 40px auto; /* FIXED: added colon */
-      font-size: 1.2rem;
-      padding: 20px;
-      line-height: 1.8;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-    }
-    section#content h2{
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-    footer{
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-    footer p{
-      margin: 10px 0;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-    }
-    #socialmedia a{
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8)
-    }
-
-    /* Mobile responsive */
-    @media (max-width: 768px){
-      #sitetitle{
-        font-size: 2rem;
-      }
-      nav a{
-        display: inline-block;
-        margin: 8px;
-      }
-      section#content{
-        padding: 15px;
-        font-size: 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Background Slideshow -->
-  <div id="bg-slideshow">
-    <div class="slide active" style="background-image: url('images/media3-bg.jpg');"></div>
-    <div class="slide" style="background-image: url('images/media8-bg.jpg');"></div>
-    <div class="slide" style="background-image: url('images/media11-bg.jpg');"></div>
-  </div>
-
-  <div id="wrapper">
-    <header>
-      <h1 id="sitetitle">Onzie's Tech Supplies</h1>
-      <span id="sitemotto">Discover your perfect computer</span>
-    </header>
-
-    <nav id="sitenav">
-      <ul id="ulnav">
-        <a href="index.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="service.html">Service</a>
-        <a href="support.html">Support</a>
-        <a href="products.html">Products</a>
-        <a href="feedback.html">Feedback</a>
-      </ul>
-    </nav>
-
-    <section id="content">
-      <h2>Welcome To Onzie's Tech Supplies!</h2>
-      <p>Explore the best tech supplies and everything you need to know about our computers. Whether you are a first year student, first time doing tech, worry less the onzie's tech supplies got you. Discover our computers get familiar with tech and have fun using it.</p>
-    </section>
-
-    <footer>
-      <p>All rights reserved. Onzies Tech Supplies@2026</p>
-      <p>For more inquiries:</p>
-      <div id="socialmedia">
-        <a href="https://www.instagram.com/OnziesTechSupplies">Instagram</a>|
-        <a href="https://www.facebook.com/OnziesTechSupplies">Facebook</a>|
-        <a href="mailto:onziestechsupplies@gmail.com">Email</a>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    const slides = document.querySelectorAll('#bg-slideshow.slide');
-    console.log("Found slides:", slides.length);
-
-    let currentSlide = 0;
-
-    function changeSlide(){
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-      console.log("Now showing slide:", currentSlide);
-    }
-
-    setInterval(changeSlide, 2000);
-  </script>
-</body>
-</html>                                    
+                </section>
+                <footer>
+                  <p>All rights reserved.Onzies Tech Supplies@2026</p>
+                  <p>For more inquiries:</p>
+                  <div id="socialmedia">
+                      <a href="https://www.instagram.com/OnziesTechSupplies">Instagram</a>|
+                      <a href="https://www.facebook.com/OnziesTechSupplies">Facebook</a>|
+                      <a href="emailto:onziestechsupplies@gmail.com">Email</a>
+                  </div>
+                </footer>
+          </div>
+     </body>
+</html>
