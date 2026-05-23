@@ -26,47 +26,35 @@
             text-align: center;
             text-shadow: 2px 2px 2px;
         }  
- .page-products table{
-            border: 1px solid blue;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            width: 100%;
-        }
-  .page-products tr, th, td{
-            border: 1px solid blue;
-            padding: 5px;
-        }
-  .page-products th{
-            background-color: lightsteelblue;
-        }
-   .page-service header{
+ 
+  .page-service header{
                     text-align: left;
                }
-   .page-service section{
+  .page-service section{
                     font-size: large;
                     padding: 20px;
                }
-   .page-service .service-layout{
+  .page-service .service-layout{
                     display: flex;
                     align-items: flex-start;
                     gap: 30px;
                }
-   .page-service .service-text{
+  .page-service .service-text{
                     flex: 1;
                     max-width: 500px;
                }
-   .page-service .service-img{
+  .page-service .service-img{
                     width: 280px;
                     flex: 1;
                     height: auto;
                     border-radius: 8px;
                }
                /*make it stack on mobile*/
-    @media (max-width:768px){
+   @media (max-width:768px){
        page-service .service-layout{
                          flex-direction: column;
                     }
-   .page-service .service-img{
+  .page-service .service-img{
                          width:100%;
                          max-width: 400px;
                          margin: 0 auto;
