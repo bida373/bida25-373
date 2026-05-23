@@ -72,4 +72,26 @@
                          margin: 0 auto;
                     }
                }
-
+   .page-support header{
+            text-align: center;
+        }
+   .page-support section{
+            font-size: larger;
+        } table{
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+   .page-support tr, th, td{
+            border: 1px solid blue;
+            padding: 10px;
+        }
+   .page-support th{
+            background-color: plum;
+        }
+    .page-support table{
+            border: 1px solid blue;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
