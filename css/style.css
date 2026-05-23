@@ -62,8 +62,8 @@
                     border-radius: 8px;
                }
                /*make it stack on mobile*/
-   .page-service @media (max-width:768px){
-                    .service-layout{
+    @media (max-width:768px){
+       page-service .service-layout{
                          flex-direction: column;
                     }
    .page-service .service-img{
