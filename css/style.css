@@ -19,3 +19,10 @@
                 padding: 2px;
                 font-size: larger;
                }
+ .page-feedback body{
+            font-size: larger;
+        }
+ .page-feedback header{
+            text-align: center;
+            text-shadow: 2px 2px 2px;
+        }  
