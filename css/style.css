@@ -5,6 +5,8 @@
   .page-about section h2{
                     font-size: large;
                     text-align: center;
+   .page-about section{
+                    font-size: large;
                }
 
 .page-contact header{
